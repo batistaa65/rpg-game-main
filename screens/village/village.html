@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Game - Village</title>
+    <link rel="stylesheet" href="village.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="outer-container">
+            <div class="location-container">
+                <h1>Location: Alderon</h1>
+                <div class="world-button-container">
+                    <button class="world-button">West: Route 1</button>
+                    <button class="world-button">Southwest: Route 2</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content-container">
+                    <div class="welcome-container">
+                        <h2>Welcome to Alderon Village</h2>
+                        <p>Choose a location to visit.</p>
+                    </div>
+                    <div class="shops-container">
+                        <div class="items-container">
+                            <button id="armory" class="shop-button" onclick="location.href='shops/armory/armory.html'">
+                                <img src="shops/armory/armory.png" alt="Armory">
+                                Armory
+                            </button>
+                            <button id="guardians-forge" class="shop-button" onclick="location.href='shops/guardians-forge/guardians-forge.html'">
+                                <img src="shops/guardians-forge/guardians-forge.png" alt="Guardian's Forge">
+                                Guardian's Forge
+                            </button>
+                            <button id="lumina" class="shop-button" onclick="location.href='shops/provisions/provisions.html'">
+                                <img src="shops/provisions/provisions.png" alt="Provisions">
+                                Provisions
+                            </button>
+                            <button id="lumina" class="shop-button" onclick="location.href='shops/lumina/lumina.html'">
+                                <img src="shops/lumina/lumina.png" alt="Lumina">
+                                Lumina
+                            </button>
+                            <button id="last-respite" class="shop-button" onclick="location.href='shops/last-respite/last-respite.html'">
+                                <img src="shops/last-respite/last-respite.png" alt="The Last Respite">
+                                The Last Respite
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="level-menu-bar">
+                <div class="level-container">
+                    <div class="level-text">Level 1</div>
+                    <div class="level-bar">
+                        <div class="level-progress" style="width: 0%;"></div>
+                        <span class="xp-text">0 / 100 XP</span>
+                    </div>
+                </div>
+                <div class="menu-bar-container">
+                    <div class="menu-bar">
+                        <button id="inventory">Inventory</button>
+                        <button id="character">Character</button>
+                        <button id="quests">Quests</button>
+                        <button id="save">Save</button>
+                        <button id="options" onclick="location.href='../options/options.html'">Options</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/levelingSystem.js"></script>
+</body>
+</html>

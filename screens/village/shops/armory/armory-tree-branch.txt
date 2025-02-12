@@ -1,0 +1,28 @@
+body
+└── div.main-container
+    └── div.outer-container
+        ├── div.location-container
+        │   ├── button.back-button
+        │   └── h1
+        ├── div.inner-container
+        │   ├── h2
+        │   └── p
+        ├── div.container
+        │   └── div.content-container
+        │       └── div.items-container
+        │           ├── button.item
+        │           └── button.item
+        └── div.footer-container
+            └── div.level-menu-bar
+                ├── div.level-container
+                │   ├── div.level-text
+                │   └── div.level-bar
+                │       ├── div.level-progress
+                │       └── span.xp-text
+                └── div.menu-bar-container
+                    └── div.menu-bar
+                        ├── button#inventory
+                        ├── button#character
+                        ├── button#quests
+                        ├── button#save
+                        └── button#options

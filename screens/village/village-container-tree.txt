@@ -1,0 +1,35 @@
+Tree Branch of Containers in village.html:
+
+body
+└── div.main-container
+    └── div.outer-container
+        ├── div.location-container
+        │   ├── h1
+        │   └── div.world-button-container
+        │       ├── button.world-button
+        │       └── button.world-button
+        ├── div.container
+        │   └── div.content-container
+        │       └── div.inner-container
+        │           ├── h2
+        │           ├── p
+        │           └── div.items-container
+        │               ├── button#armory
+        │               ├── button#guardians-forge
+        │               ├── button#lumina (provisions)
+        │               ├── button#lumina
+        │               └── button#last-respite
+        └── div.footer-container
+            └── div.level-menu-bar
+                ├── div.level-container
+                │   ├── div.level-text
+                │   └── div.level-bar
+                │       ├── div.level-progress
+                │       └── span.xp-text
+                └── div.menu-bar-container
+                    └── div.menu-bar
+                        ├── button#inventory
+                        ├── button#character
+                        ├── button#quests
+                        ├── button#save
+                        └── button#options

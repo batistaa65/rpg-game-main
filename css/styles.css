@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #443d3d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.outer-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(136, 106, 106);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Ensure container doesn't exceed viewport width */
+    max-height: 90%; /* Ensure container doesn't exceed viewport height */
+    overflow: auto; /* Allow internal scrolling if needed */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px; /* Increase padding */
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px; /* Add some space between buttons */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    text-align: left; /* Align text to the left */
+}
+
+button img {
+    vertical-align: middle;
+    margin-right: 10px; /* Space between image and text */
+    width: 50%; /* Scale down the image by 50% */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button img {
+        width: 40%; /* Further scale down the image for smaller screens */
+    }
+
+    .menu-bar button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button img {
+        width: 35%; /* Further scale down the image for smaller screens */
+    }
+
+    .menu-bar button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
